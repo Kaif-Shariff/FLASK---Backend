@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign up for free</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+    <nav class="navbar">
+        <p class="logo"><a href="/">Brand</a></p>
+        <ul>
+            <li><button id="loginBtn" onclick="window.location.href = '/login'">Login</button></li>
+            <li><button id="signBtn" onclick="window.location.href = '/signup'">Sign Up?</button></li>
+        </ul>
+    </nav>
+    <div class="hero">
+
+        <form method="post" action="">
+            <h1>Sign Up</h1>
+            <input type="email" name="email" placeholder="Enter Email">
+            <input type="text" name="NewUsername" placeholder="Create Username">
+            <input type="password" name="NewPassword" placeholder="Create Password">
+            <input type="text" name="NewHobby" placeholder="Enter a hobby">
+            <input type="submit" name="signUpBtn" value="Sign Up">
+        </form>
+    </div>
+
+    <div class="message">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul class="flash-messages">
+            {% for message in messages %}
+            <li>{{ message}}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+    </div>
+</body>
+
+</html>

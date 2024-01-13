@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connect with Python backend</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+  <nav class="navbar">
+    <p class="logo"><a href="/">Brand</a></p>
+    <ul>
+      {% if data %}
+      <li><button id="logOutBtn" onclick="window.location.href = '/'">Log Out</button></li>
+      {% else %}
+        <li><button id="loginBtn" onclick="window.location.href = '/login'">Login</button></li>
+        <li><button id="signBtn" onclick="window.location.href = '/signup'">Sign Up?</button></li>
+      {% endif %}
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h1>Welcome, User!</h1>
+    {% if data %}
+    <p>Username: {{data.username}}</p>
+    <p>Password: {{data.pass}}</p>
+    <p>Email: {{data.email}}</p>
+    <p>Hobby: {{data.hobby}}</p>
+    {% else %}
+    <h2 style="text-align: center;"><a href="./login">Please Login First</a></h2>
+    {% endif %}
+  </div>
+
+</body>
+
+</html>

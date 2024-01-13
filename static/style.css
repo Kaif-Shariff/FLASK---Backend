@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Noto+Sans+Glagolitic&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Noto Sans Glagolitic", sans-serif;
+}
+
+body {
+  color: white;
+  background: black;
+}
+
+.navbar {
+  background-color: #1a1919;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+}
+
+.navbar .logo a {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-style: italic;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar ul {
+  display: flex;
+}
+.navbar ul li {
+  list-style-type: none;
+}
+.navbar ul li button {
+  outline: none;
+  font-size: 16px;
+  margin: 0px 15px 0px 15px;
+  padding: 4px 13px 4px 13px;
+  background-color: transparent;
+  border: 2px solid rgb(15, 68, 227);
+  color: rgb(15, 68, 227);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.navbar ul li button:hover {
+  color: white;
+  background-color: rgb(15, 68, 227);
+  cursor: pointer;
+}
+
+#logOutBtn {
+  color: white;
+  background-color: rgb(15, 68, 227);
+  border: 2px solid rgb(15, 68, 227);
+  transition: 0.4s ease-in-out;
+}
+#logOutBtn:hover {
+  background-color: transparent;
+  border: 2px solid rgb(15, 68, 227);
+}
+
+.hero {
+  cursor: pointer;
+  position: absolute;
+  background-color: #1a1919;
+  padding: 20px 60px;
+  border-radius: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.hero h2 a {
+  color: blue;
+  text-decoration: none;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+input[type="text"] {
+  color: white;
+  border: 2px solid rgb(15, 68, 227);
+  background-color: transparent;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 5px 20px;
+  outline: none;
+  margin-bottom: 20px;
+}
+input[type="email"] {
+  color: white;
+  border: 2px solid rgb(15, 68, 227);
+  background-color: transparent;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 5px 20px;
+  outline: none;
+  margin-bottom: 20px;
+}
+input[type="password"] {
+  color: white;
+  border: 2px solid rgb(15, 68, 227);
+  background-color: transparent;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 5px 20px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+form input[type="submit"] {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(15, 68, 227);
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 5px 20px;
+  outline: none;
+  margin: 10px 0px;
+  font-weight: bold;
+  border: 2px solid rgb(15, 68, 227);
+}
+form input[type="submit"]:hover {
+  background-color: transparent;
+  border: 2px solid rgb(15, 68, 227);
+}
+
+.message {
+  background-color: #1a1919;
+  top: 80%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+}
+
+.message li {
+  list-style-type: none;
+  width: 330px;
+  text-align: center;
+  padding: 7px 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
