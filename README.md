@@ -19,4 +19,4 @@ This website includes:
 
 
 
-*This program is not secured with any encryption it is just a part of my backend journey!*
+*This program is not secured with any encryption it is just a part of my backend learning journey!*
